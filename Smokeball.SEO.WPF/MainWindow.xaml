@@ -1,0 +1,31 @@
+﻿<Window x:Class="Smokeball.SEO.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smokeball.SEO.WPF"
+        mc:Ignorable="d"
+        Title="Smokeball SEO Application" Height="500" Width="400">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0" Grid.RowSpan="4">
+            <Label FontSize="18">Enter Keywords and Url and click Search</Label>
+            <Label>Enter Keywords:</Label>
+            <TextBox x:Name="txtKeywords" Height="50"/>
+            <Label>Enter Url:</Label>
+            <TextBox x:Name="txtUrl" Height="50"/>
+            <Button x:Name="btnSeacrh" Click="btnSeacrh_Click" Content="Search" Width="150" Height="50" Margin="0,5,0,0" Background="LightGreen" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <Label Grid.Row="2" Margin="15,15,15,155" FontSize="18" FontFamily="bold">Search Results</Label>
+        <TextBlock Grid.Row="2" x:Name="lstResults" Margin="25,67,15,15"/>
+    </Grid>
+</Window>
