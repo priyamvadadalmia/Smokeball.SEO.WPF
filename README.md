@@ -48,4 +48,4 @@ The WPF UI is just a basic UI design as the developer doesn't have extensive kno
 
 Smokeball.SEO.WPF is the startup project which interacts with Business class and that in turn interacts with Service layer through DI inbuilt in .NET core
 
-Love the limitations, and craziness, of this project.
+Loved to build this with the limitaion of not using Nuget library and doing manual scraping. 
